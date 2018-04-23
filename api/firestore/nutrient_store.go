@@ -37,7 +37,7 @@ func (ns NutrientStore) GetNutrients() (nutrients []*api.Nutrient, err error) {
 		}
 
 		nutrient := &api.Nutrient{
-			ID: doc.Ref.ID,
+			Id: doc.Ref.ID,
 		}
 		doc.DataTo(&nutrient)
 		nutrients = append(nutrients, nutrient)

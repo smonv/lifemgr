@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "api";
+
+import "google/protobuf/empty.proto";
+import "google/api/annotations.proto";
+import "nutrient.proto";
+
+service API {
+    rpc GetNutrients(google.protobuf.Empty) returns (GetNutrientsResponse) {
+        option (google.api.http) = {
+            get: "/v1/nutrients"
+        };
+    }
+}
+
+message GetNutrientsResponse {
+    repeated Nutrient nutrients = 1;
+}

@@ -37,6 +37,7 @@
 [[projects]]
   name = "github.com/golang/protobuf"
   packages = [
+    "jsonpb",
     "proto",
     "protoc-gen-go/descriptor",
     "ptypes",
@@ -55,6 +56,16 @@
   packages = ["."]
   revision = "317e0006254c44a0ac427cc52a0e083ff0b9622f"
   version = "v2.0.0"
+
+[[projects]]
+  name = "github.com/grpc-ecosystem/grpc-gateway"
+  packages = [
+    "runtime",
+    "runtime/internal",
+    "utilities"
+  ]
+  revision = "07f5e79768022f9a3265235f0db4ac8c3f675fec"
+  version = "v1.3.1"
 
 [[projects]]
   name = "go.opencensus.io"
@@ -210,6 +221,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "59647948d7ba9c53d7ffa98da393cf8717ae8680fdea3b2f0ff7137fa272df00"
+  inputs-digest = "96441c6ed82ec1e153e9190cab7cce3c04a15a0ae42cf324dc53583305dbf86a"
   solver-name = "gps-cdcl"
   solver-version = 1
